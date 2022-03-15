@@ -1,0 +1,64 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: white;
+}
+
+.negativo{
+  color:white
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 100%;
+  padding: 15px;
+  margin: auto 5em;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.button-klaxon{
+  background-color:#f8e600;
+  color:black;
+}
+
+.file-upload-form{
+  width: 100%;
+  max-width: 40em;
+  padding: 15px;
+  margin: auto;
+}
+
+.button-container{
+  min-width:10em;
+  display: inline-flex;
+}
+
+.button-container>*{
+  margin:0.2em;
+}
