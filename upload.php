@@ -16,6 +16,10 @@ if (!isset($_SESSION["loggedin"]) && !$_SESSION["loggedin"]) {
             die("Connection failed: " . $conn->connect_error);
         }
 
+        if($_FILES["new-document"]["name"]==""){
+            die("Filename is empty");
+        }
+
         $stmt = $conn->prepare("INSERT INTO files (filename, email) VALUES (?,?)");
         $stmt->bind_param("ss", $_FILES["new-document"]["name"], $_SESSION["user"]);
 
